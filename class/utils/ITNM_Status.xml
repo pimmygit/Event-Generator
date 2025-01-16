@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Define Table  -->
+<table name="ITNM_Status">
+	<!-- This cell defines the event ID -->
+	<column name="_ID" position="0" minWidth="30" prefWidth="35" maxWidth="40" type="0">
+		<rows>
+			<cell value="0"/>
+			<cell value="1"/>
+			<cell value="2"/>
+			<cell value="3"/>
+			<cell value="4"/>
+			<cell value="5"/>
+		</rows>
+	</column>
+	<!-- This cell activates and deactivates the event poll -->
+	<column name="_Act" position="1" minWidth="25" prefWidth="30" maxWidth="40" type="1">
+		<rows>
+			<cell value="false"/>
+			<cell value="false"/>
+			<cell value="false"/>
+			<cell value="false"/>
+			<cell value="false"/>
+			<cell value="true"/>
+		</rows>
+	</column>
+	<!-- This cell defines the value of the  poll interval. Default: 60, 0 - Max speed  -->
+	<column name="_Poll" position="2" minWidth="30" prefWidth="35" maxWidth="50" type="0">
+		<rows>
+			<cell value="1"/>
+			<cell value="2"/>
+			<cell value="4"/>
+			<cell value="6"/>
+			<cell value="8"/>
+			<cell value="10"/>
+		</rows>
+	</column>
+	<!-- This cell defines how many events to be sent. Default: 0 - indefinite  -->
+	<column name="_Stop" position="3" minWidth="30" prefWidth="35" maxWidth="50" type="0">
+		<rows>
+			<cell value="0"/>
+			<cell value="0"/>
+			<cell value="0"/>
+			<cell value="0"/>
+			<cell value="0"/>
+			<cell value="0"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "NmosEntityId" value of the event -->
+	<column name="NmosEntityId" position="4" minWidth="50" prefWidth="106" maxWidth="700" type="0">
+		<rows>
+			<cell value="410156"/>
+			<cell value="410157"/>
+			<cell value="410158"/>
+			<cell value="410159"/>
+			<cell value="410160"/>
+			<cell value="64"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Node" value of the event -->
+	<column name="Node" position="5" minWidth="50" prefWidth="106" maxWidth="700" type="1">
+		<rows>
+			<cell value="172.16.99.10"/>
+			<cell value="172.16.99.10"/>
+			<cell value="172.16.99.10"/>
+			<cell value="172.16.99.10"/>
+			<cell value="172.16.99.10"/>
+			<cell value="172.16.99.10"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "AlertKey" value of the event -->
+	<column name="AlertKey" position="6" minWidth="50" prefWidth="202" maxWidth="700" type="1">
+		<rows>
+			<cell value="@172.16.99.10->NmosPingFail"/>
+			<cell value="@172.16.99.10->NmosPingFail"/>
+			<cell value="@172.16.99.10->NmosPingFail"/>
+			<cell value="@172.16.99.10->NmosPingFail"/>
+			<cell value="@172.16.99.10->NmosPingFail"/>
+			<cell value="@172.16.99.10->NmosPingFail"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Severity" value of the event -->
+	<column name="Severity" position="7" minWidth="50" prefWidth="104" maxWidth="700" type="0">
+		<rows>
+			<cell value="5"/>
+			<cell value="4"/>
+			<cell value="3"/>
+			<cell value="2"/>
+			<cell value="1"/>
+			<cell value="5"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Summary" value of the event -->
+	<column name="Summary" position="8" minWidth="50" prefWidth="319" maxWidth="700" type="1">
+		<rows>
+			<cell value="Fake ITNM Event - Something BAD happened"/>
+			<cell value="Fake ITNM Event - Something NOT SO BAD happened"/>
+			<cell value="Fake ITNM Event - Something KIND OF BAD happened"/>
+			<cell value="Fake ITNM Event - Something JUST happened"/>
+			<cell value="Fake ITNM Event - Something NORMAL happened"/>
+			<cell value="Fake ITNM Event - BAD Event"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "LastOccurrence" value of the event -->
+	<column name="LastOccurrence" position="9" minWidth="50" prefWidth="133" maxWidth="700" type="0">
+		<rows>
+			<cell value="Current time."/>
+			<cell value="Current time."/>
+			<cell value="Current time."/>
+			<cell value="Current time."/>
+			<cell value="Current time."/>
+			<cell value="Current time."/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Agent" value of the event -->
+	<column name="Agent" position="10" minWidth="50" prefWidth="133" maxWidth="700" type="1">
+		<rows>
+			<cell value="ITNM Monitor Probe"/>
+			<cell value="ITNM Monitor Probe"/>
+			<cell value="ITNM Monitor Probe"/>
+			<cell value="ITNM Monitor Probe"/>
+			<cell value="ITNM Monitor Probe"/>
+			<cell value="ITNM Monitor Probe"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "NmosDomainName" value of the event -->
+	<column name="NmosDomainName" position="11" minWidth="50" prefWidth="129" maxWidth="700" type="1">
+		<rows>
+			<cell value="ITNM38SU"/>
+			<cell value="ITNM38SU"/>
+			<cell value="ITNM38SU"/>
+			<cell value="ITNM38SU"/>
+			<cell value="ITNM38SU"/>
+			<cell value="ITNM38SU"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "AlertGroup" value of the event -->
+	<column name="AlertGroup" position="12" minWidth="50" prefWidth="75" maxWidth="700" type="1">
+		<rows>
+			<cell value="ITNM Monitor"/>
+			<cell value="ITNM Monitor"/>
+			<cell value="ITNM Monitor"/>
+			<cell value="ITNM Monitor"/>
+			<cell value="ITNM Monitor"/>
+			<cell value="ITNM Monitor"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Manager" value of the event -->
+	<column name="Manager" position="13" minWidth="50" prefWidth="93" maxWidth="700" type="1">
+		<rows>
+			<cell value="ITNM"/>
+			<cell value="ITNM"/>
+			<cell value="ITNM"/>
+			<cell value="ITNM"/>
+			<cell value="ITNM"/>
+			<cell value="ITNM"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Identifier" value of the event -->
+	<column name="Identifier" position="14" minWidth="50" prefWidth="153" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:1, To:1000000"/>
+			<cell value="From:1, To:1000000"/>
+			<cell value="From:1, To:1000000"/>
+			<cell value="From:1, To:1000000"/>
+			<cell value="From:1, To:1000000"/>
+			<cell value="From:1, To:1000000"/>
+		</rows>
+	</column>
+</table>

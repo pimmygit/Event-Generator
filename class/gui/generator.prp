@@ -1,0 +1,94 @@
+######################################################################
+#
+# IBM Tivoli Event Generator
+#
+# IBM Confidential
+# OCO Source Materials
+#
+# 5724-S45
+#
+# (C) Copyright IBM Corp. 2005, 2011
+#
+# The source code for this program is not published or otherwise
+# divested of its trade secrets, irrespective of what has
+# been deposited with the U.S. Copyright Office.
+#
+######################################################################
+
+######################################################################
+#
+# NETCOOL / Event Generator - 1.0.1.b3
+# Author: Kliment Stefanov
+# 
+# Event Generator properties file - generator.props
+#
+######################################################################
+
+
+######################################################################
+#
+# Event Generator runtime properties
+#
+######################################################################
+# Event Generator Home directory
+# EGEN_HOME = C:\\Program Files\\EventGenerator\\
+#
+# Logging Level. Values - DEBUG, MINOR, MAJOR, CRITICAL. Default: MAJOR
+# messagelevel = MAJOR
+#
+# Log Output. Values:	STDOUT     - prints the log to the screen (CMD/UNIX Only), 
+#			<FILENAME> - prints the log to a specified file. Default: generator.log
+# messagelog = generator.log
+#
+######################################################################
+
+######################################################################
+#
+# Event Generator Default Object Server Settings
+#
+# Note 1: Changes into this section will take affect only if 
+#         "usersets.prp" file does not exist.
+# Note 2: All changes to the OS Setting must be done via the GUI
+#
+######################################################################
+#
+# OS_Name = "NCOMS"
+# OS_Host = "localhost"
+# OS_Port = "4100"
+# OS_User = "root"
+# OS_Pass = ""
+#
+######################################################################
+
+######################################################################
+#
+# Default Event Table
+#
+# Note 1: Changes into this section will take affect only if 
+#         "usersets.prp" file does not exist.
+# Note 2: All changes to the Event Table must be done via the GUI
+#
+######################################################################
+#
+# Table = "template.xml"
+#
+######################################################################
+
+######################################################################
+#
+# Main Thread Priority
+#
+# Defines the amount of CPU resource which the Event Generator
+# will take. Values: MIN, NORM, MAX. Default: MAX
+#
+######################################################################
+#
+# ThreadPriority = MAX
+#
+######################################################################
+
+######################################################################
+# 
+# Put your settings below this section
+#
+######################################################################
