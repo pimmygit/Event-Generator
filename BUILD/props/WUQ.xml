@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Define Table  -->
+<table name="UQM" dbTarget="alerts.status">
+	<!-- This cell defines the event ID -->
+	<column name="_ID" position="0" minWidth="30" prefWidth="35" maxWidth="40" type="0">
+		<rows>
+			<cell value="0"/>
+			<cell value="1"/>
+			<cell value="2"/>
+			<cell value="3"/>
+			<cell value="4"/>
+			<cell value="5"/>
+			<cell value="6"/>
+			<cell value="7"/>
+			<cell value="8"/>
+			<cell value="9"/>
+			<cell value="10"/>
+			<cell value="11"/>
+			<cell value="12"/>
+			<cell value="13"/>
+			<cell value="14"/>
+			<cell value="15"/>
+			<cell value="16"/>
+			<cell value="17"/>
+			<cell value="18"/>
+		</rows>
+	</column>
+	<!-- This cell activates and deactivates the event poll -->
+	<column name="_Act" position="1" minWidth="25" prefWidth="30" maxWidth="40" type="1">
+		<rows>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+			<cell value="true"/>
+		</rows>
+	</column>
+	<!-- This cell defines the value of the  poll interval. Default: 60, 0 - Max speed  -->
+	<column name="_Poll" position="2" minWidth="30" prefWidth="35" maxWidth="50" type="0">
+		<rows>
+			<cell value="15"/>
+			<cell value="10"/>
+			<cell value="5"/>
+			<cell value="15"/>
+			<cell value="10"/>
+			<cell value="5"/>
+			<cell value="10"/>
+			<cell value="5"/>
+			<cell value="15"/>
+			<cell value="10"/>
+			<cell value="5"/>
+			<cell value="15"/>
+			<cell value="5"/>
+			<cell value="10"/>
+			<cell value="15"/>
+			<cell value="5"/>
+			<cell value="10"/>
+			<cell value="15"/>
+			<cell value="1"/>
+		</rows>
+	</column>
+	<!-- This cell defines how many events to be sent. Default: 0 - indefinite  -->
+	<column name="_Stop" position="3" minWidth="30" prefWidth="35" maxWidth="50" type="0">
+		<rows>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+			<cell value="500"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Agent" value of the event -->
+	<column name="Agent" position="4" minWidth="50" prefWidth="112" maxWidth="700" type="1">
+		<rows>
+			<cell value="VOICE Symbian 7"/>
+			<cell value="VOICE Symbian 7"/>
+			<cell value="VOICE Symbian 7"/>
+			<cell value="VOICE Symbian 7"/>
+			<cell value="VOICE Symbian 7"/>
+			<cell value="VOICE Symbian 7"/>
+			<cell value="DATA Symbian 7"/>
+			<cell value="DATA Symbian 7"/>
+			<cell value="DATA Symbian 7"/>
+			<cell value="DATA Symbian 7"/>
+			<cell value="DATA Symbian 7"/>
+			<cell value="DATA Symbian 7"/>
+			<cell value="VIDEO Symbian 7"/>
+			<cell value="VIDEO Symbian 7"/>
+			<cell value="VIDEO Symbian 7"/>
+			<cell value="VIDEO Symbian 7"/>
+			<cell value="VIDEO Symbian 7"/>
+			<cell value="VIDEO Symbian 7"/>
+			<cell value="Connection Watch"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "AlertGroup" value of the event -->
+	<column name="AlertGroup" position="5" minWidth="50" prefWidth="75" maxWidth="700" type="1">
+		<rows>
+			<cell value="uqm voice"/>
+			<cell value="uqm voice"/>
+			<cell value="uqm voice"/>
+			<cell value="uqm voice"/>
+			<cell value="uqm voice"/>
+			<cell value="uqm voice"/>
+			<cell value="uqm data"/>
+			<cell value="uqm data"/>
+			<cell value="uqm data"/>
+			<cell value="uqm data"/>
+			<cell value="uqm data"/>
+			<cell value="uqm data"/>
+			<cell value="uqm video"/>
+			<cell value="uqm video"/>
+			<cell value="uqm video"/>
+			<cell value="uqm video"/>
+			<cell value="uqm video"/>
+			<cell value="uqm video"/>
+			<cell value="MM Admin"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "AlertKey" value of the event -->
+	<column name="AlertKey" position="6" minWidth="50" prefWidth="91" maxWidth="700" type="1">
+		<rows>
+			<cell value="MOS"/>
+			<cell value="MOS"/>
+			<cell value="MOS"/>
+			<cell value="MOS"/>
+			<cell value="MOS"/>
+			<cell value="MOS"/>
+			<cell value="Data Rate"/>
+			<cell value="Data Rate"/>
+			<cell value="Data Rate"/>
+			<cell value="Data Rate"/>
+			<cell value="Data Rate"/>
+			<cell value="Data Rate"/>
+			<cell value="Video Quality"/>
+			<cell value="Video Quality"/>
+			<cell value="Video Quality"/>
+			<cell value="Video Quality"/>
+			<cell value="Video Quality"/>
+			<cell value="Video Quality"/>
+			<cell value="Monitor"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Bearer" value of the event -->
+	<column name="Bearer" position="7" minWidth="50" prefWidth="71" maxWidth="700" type="1">
+		<rows>
+			<cell value="GSM/GPRS"/>
+			<cell value="GSM/GPRS"/>
+			<cell value="GSM/GPRS"/>
+			<cell value="UMTS"/>
+			<cell value="UMTS"/>
+			<cell value="UMTS"/>
+			<cell value="GSM/GPRS"/>
+			<cell value="GSM/GPRS"/>
+			<cell value="GSM/GPRS"/>
+			<cell value="UMTS"/>
+			<cell value="UMTS"/>
+			<cell value="UMTS"/>
+			<cell value="3G"/>
+			<cell value="3G"/>
+			<cell value="3G"/>
+			<cell value="UMTS"/>
+			<cell value="UMTS"/>
+			<cell value="UMTS"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "CallRoute" value of the event -->
+	<column name="CallRoute" position="8" minWidth="50" prefWidth="71" maxWidth="700" type="1">
+		<rows>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value="via MUSE"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "CellID" value of the event -->
+	<column name="CellID" position="9" minWidth="50" prefWidth="124" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:1001, To:1022"/>
+			<cell value="From:2001, To:2005"/>
+			<cell value="From:1001, To:1022"/>
+			<cell value="From:1001, To:1022"/>
+			<cell value="From:1001, To:1022"/>
+			<cell value="From:2001, To:2009"/>
+			<cell value="From:2001, To:2009"/>
+			<cell value="From:2001, To:2009"/>
+			<cell value="From:2001, To:2009"/>
+			<cell value="From:2001, To:2009"/>
+			<cell value="From:2001, To:2009"/>
+			<cell value="From:2001, To:2009"/>
+			<cell value="From:2001, To:2009"/>
+			<cell value="From:2001, To:2009"/>
+			<cell value="From:2001, To:2009"/>
+			<cell value="From:2001, To:2009"/>
+			<cell value="From:2001, To:2009"/>
+			<cell value="From:2001, To:2009"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Class" value of the event -->
+	<column name="Class" position="10" minWidth="50" prefWidth="111" maxWidth="700" type="1">
+		<rows>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+			<cell value="Start:100, Step:20"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Customer" value of the event -->
+	<column name="Customer" position="11" minWidth="50" prefWidth="82" maxWidth="700" type="1">
+		<rows>
+			<cell value="Orange"/>
+			<cell value="T-Mobile"/>
+			<cell value="Vodafone"/>
+			<cell value="Orange"/>
+			<cell value="T-Mobile"/>
+			<cell value="Vodafone"/>
+			<cell value="Orange"/>
+			<cell value="T-Mobile"/>
+			<cell value="Vodafone"/>
+			<cell value="Orange"/>
+			<cell value="T-Mobile"/>
+			<cell value="Vodafone"/>
+			<cell value="Orange"/>
+			<cell value="T-Mobile"/>
+			<cell value="Vodafone"/>
+			<cell value="Orange"/>
+			<cell value="T-Mobile"/>
+			<cell value="Vodafone"/>
+			<cell value="Micromuse"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "DistinguishedName" value of the event -->
+	<column name="DistinguishedName" position="12" minWidth="50" prefWidth="135" maxWidth="700" type="1">
+		<rows>
+			<cell value="Voice Orange"/>
+			<cell value="Voice T-Mobile"/>
+			<cell value="Voice Vodafone"/>
+			<cell value="Voice Orange"/>
+			<cell value="Voice T-Mobile"/>
+			<cell value="Voice Vodafone"/>
+			<cell value="Data Orange"/>
+			<cell value="Data T-Mobile"/>
+			<cell value="Data Vodafone"/>
+			<cell value="Data Orange"/>
+			<cell value="Data T-Mobile"/>
+			<cell value="Data Vodafone"/>
+			<cell value="Video Orange"/>
+			<cell value="Video T-Mobile"/>
+			<cell value="Video Vodafone"/>
+			<cell value="Video Orange"/>
+			<cell value="Video T-Mobile"/>
+			<cell value="Video Vodafone"/>
+			<cell value="Connection watch"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "ExpireTime" value of the event -->
+	<column name="ExpireTime" position="13" minWidth="50" prefWidth="75" maxWidth="700" type="0">
+		<rows>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="3600"/>
+			<cell value="0"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Identifier" value of the event -->
+	<column name="Identifier" position="14" minWidth="50" prefWidth="165" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+			<cell value="From:1000, To:100000000"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "LastOccurrence" value of the event -->
+	<column name="LastOccurrence" position="15" minWidth="50" prefWidth="105" maxWidth="700" type="1">
+		<rows>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+			<cell value="Current Time."/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Location" value of the event -->
+	<column name="Location" position="16" minWidth="50" prefWidth="292" maxWidth="700" type="1">
+		<rows>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value="minLat:43.00, maxLat:45.00, minLong:5, maxLong:7"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Manager" value of the event -->
+	<column name="Manager" position="17" minWidth="50" prefWidth="99" maxWidth="700" type="1">
+		<rows>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="NUQM Monitor"/>
+			<cell value="Administrator"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "MobileDevice" value of the event -->
+	<column name="MobileDevice" position="18" minWidth="50" prefWidth="108" maxWidth="700" type="1">
+		<rows>
+			<cell value="Nokia 6680"/>
+			<cell value="Motorola A1010"/>
+			<cell value="BenQ P30"/>
+			<cell value="Sendo X2"/>
+			<cell value="Panasonic X700"/>
+			<cell value="FOMA F880iES"/>
+			<cell value="Nokia 6680"/>
+			<cell value="Motorola A1010"/>
+			<cell value="BenQ P30"/>
+			<cell value="Sendo X2"/>
+			<cell value="Panasonic X700"/>
+			<cell value="FOMA F880iES"/>
+			<cell value="Nokia 6680"/>
+			<cell value="Motorola A1010"/>
+			<cell value="BenQ P30"/>
+			<cell value="Sendo X2"/>
+			<cell value="Panasonic X700"/>
+			<cell value="FOMA F880iES"/>
+			<cell value="Sun SPARC"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "NetworkFailure" value of the event -->
+	<column name="NetworkFailure" position="19" minWidth="50" prefWidth="108" maxWidth="700" type="1">
+		<rows>
+			<cell value="Line Noise"/>
+			<cell value="Line Noise"/>
+			<cell value="Line Noise"/>
+			<cell value="Bad Reception"/>
+			<cell value="Bad Reception"/>
+			<cell value="Bad Reception"/>
+			<cell value="Low Signal"/>
+			<cell value="Low Signal"/>
+			<cell value="Low Signal"/>
+			<cell value="Slow Transmition"/>
+			<cell value="Slow Transmition"/>
+			<cell value="Slow Transmition"/>
+			<cell value="Line Noise"/>
+			<cell value="Line Noise"/>
+			<cell value="Line Noise"/>
+			<cell value="Cell Power Down"/>
+			<cell value="Cell Power Down"/>
+			<cell value="Cell Power Down"/>
+			<cell value="Power failure"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Node" value of the event -->
+	<column name="Node" position="20" minWidth="50" prefWidth="80" maxWidth="700" type="1">
+		<rows>
+			<cell value="123450324"/>
+			<cell value="123450656"/>
+			<cell value="123450785"/>
+			<cell value="123450568"/>
+			<cell value="123450385"/>
+			<cell value="123450694"/>
+			<cell value="123450865"/>
+			<cell value="123450876"/>
+			<cell value="123450689"/>
+			<cell value="123450858"/>
+			<cell value="123450579"/>
+			<cell value="123450975"/>
+			<cell value="123450356"/>
+			<cell value="123450346"/>
+			<cell value="123450864"/>
+			<cell value="123450293"/>
+			<cell value="123450386"/>
+			<cell value="123450480"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "NodeAlias" value of the event -->
+	<column name="NodeAlias" position="21" minWidth="50" prefWidth="123" maxWidth="700" type="1">
+		<rows>
+			<cell value="354349003050229"/>
+			<cell value="355661005986138"/>
+			<cell value="354349003798751"/>
+			<cell value="354349003050229"/>
+			<cell value="355661005986138"/>
+			<cell value="354349003798751"/>
+			<cell value="354349003050229"/>
+			<cell value="355661005986138"/>
+			<cell value="354349003798751"/>
+			<cell value="354349003050229"/>
+			<cell value="355661005986138"/>
+			<cell value="354349003798751"/>
+			<cell value="354349003050229"/>
+			<cell value="355661005986138"/>
+			<cell value="354349003798751"/>
+			<cell value="354349003050229"/>
+			<cell value="355661005986138"/>
+			<cell value="354349003798751"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Poll" value of the event -->
+	<column name="Poll" position="22" minWidth="50" prefWidth="140" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Service" value of the event -->
+	<column name="Service" position="23" minWidth="50" prefWidth="63" maxWidth="700" type="1">
+		<rows>
+			<cell value="VOICE"/>
+			<cell value="VOICE"/>
+			<cell value="VOICE"/>
+			<cell value="VOICE"/>
+			<cell value="VOICE"/>
+			<cell value="VOICE"/>
+			<cell value="DATA"/>
+			<cell value="DATA"/>
+			<cell value="DATA"/>
+			<cell value="DATA"/>
+			<cell value="DATA"/>
+			<cell value="DATA"/>
+			<cell value="VIDEO"/>
+			<cell value="VIDEO"/>
+			<cell value="VIDEO"/>
+			<cell value="VIDEO"/>
+			<cell value="VIDEO"/>
+			<cell value="VIDEO"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Severity" value of the event -->
+	<column name="Severity" position="24" minWidth="50" prefWidth="89" maxWidth="700" type="0">
+		<rows>
+			<cell value="From:1, To:3"/>
+			<cell value="From:1, To:3"/>
+			<cell value="From:1, To:3"/>
+			<cell value="From:4, To:5"/>
+			<cell value="From:4, To:5"/>
+			<cell value="From:4, To:5"/>
+			<cell value="From:0, To:2"/>
+			<cell value="From:0, To:2"/>
+			<cell value="From:0, To:2"/>
+			<cell value="From:2, To:5"/>
+			<cell value="From:2, To:5"/>
+			<cell value="From:2, To:5"/>
+			<cell value="From:4, To:5"/>
+			<cell value="From:4, To:5"/>
+			<cell value="From:4, To:5"/>
+			<cell value="From:0, To:3"/>
+			<cell value="From:0, To:3"/>
+			<cell value="From:0, To:3"/>
+			<cell value="From:4, To:5"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "SignalStrength" value of the event -->
+	<column name="SignalStrength" position="25" minWidth="50" prefWidth="105" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value="From:0, To:100"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Summary" value of the event -->
+	<column name="Summary" position="26" minWidth="50" prefWidth="336" maxWidth="700" type="1">
+		<rows>
+			<cell value="VOICE Message:[Low MOS, Status: [MARGINAL]"/>
+			<cell value="VOICE Message:[Low MOS, Status: [MARGINAL]"/>
+			<cell value="VOICE Message:[Low MOS, Status: [MARGINAL]"/>
+			<cell value="VOICE Message:[Low MOS, Status: [BAD]"/>
+			<cell value="VOICE Message:[Low MOS, Status: [BAD]"/>
+			<cell value="VOICE Message:[Low MOS, Status: [BAD]"/>
+			<cell value="DATA Message:[HTTP Error] Status: [BAD]"/>
+			<cell value="DATA Message:[HTTP Error] Status: [BAD]"/>
+			<cell value="DATA Message:[HTTP Error] Status: [BAD]"/>
+			<cell value="DATA Message:[HTTP Error] Status: [BAD]"/>
+			<cell value="DATA Message:[HTTP Error] Status: [BAD]"/>
+			<cell value="DATA Message:[HTTP Error] Status: [BAD]"/>
+			<cell value="VIDEO Message:[Network Unavailable] Status: [BAD]"/>
+			<cell value="VIDEO Message:[Network Unavailable] Status: [BAD]"/>
+			<cell value="VIDEO Message:[Network Unavailable] Status: [BAD]"/>
+			<cell value="VIDEO Message:[Network Unavailable] Status: [BAD]"/>
+			<cell value="VIDEO Message:[Network Unavailable] Status: [BAD]"/>
+			<cell value="VIDEO Message:[Network Unavailable] Status: [BAD]"/>
+			<cell value="Network Problem"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "UQMValue0" value of the event -->
+	<column name="UQMValue0" position="27" minWidth="50" prefWidth="125" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "UQMValue1" value of the event -->
+	<column name="UQMValue1" position="28" minWidth="50" prefWidth="120" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value="From:100, To:1000"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "UQMValue2" value of the event -->
+	<column name="UQMValue2" position="29" minWidth="50" prefWidth="126" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:2, To:3"/>
+			<cell value="From:2, To:3"/>
+			<cell value="From:2, To:3"/>
+			<cell value="From:0, To:2"/>
+			<cell value="From:0, To:2"/>
+			<cell value="From:0, To:2"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "UQMValue3" value of the event -->
+	<column name="UQMValue3" position="30" minWidth="50" prefWidth="126" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "UQMValue4" value of the event -->
+	<column name="UQMValue4" position="31" minWidth="50" prefWidth="132" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "UQMValue5" value of the event -->
+	<column name="UQMValue5" position="32" minWidth="50" prefWidth="137" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "UQMValue6" value of the event -->
+	<column name="UQMValue6" position="33" minWidth="50" prefWidth="129" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "UQMValue7" value of the event -->
+	<column name="UQMValue7" position="34" minWidth="50" prefWidth="130" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "UQMValue8" value of the event -->
+	<column name="UQMValue8" position="35" minWidth="50" prefWidth="130" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "UQMValue9" value of the event -->
+	<column name="UQMValue9" position="36" minWidth="50" prefWidth="130" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value=""/>
+		</rows>
+	</column>
+	<!-- This cell contains the "UQMValue10" value of the event -->
+	<column name="UQMValue10" position="37" minWidth="50" prefWidth="130" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value="From:100, To:10000"/>
+			<cell value=""/>
+		</rows>
+	</column>
+
+</table>

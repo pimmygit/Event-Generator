@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Define Table  -->
+<table name="template" dbTarget="alerts.status">
+	<!-- This cell defines the event ID -->
+	<column name="_ID" position="0" minWidth="30" prefWidth="35" maxWidth="40" type="0">
+		<rows>
+			<cell value="0"/>
+		</rows>
+	</column>
+	<!-- This cell activates and deactivates the event poll -->
+	<column name="_Act" position="1" minWidth="25" prefWidth="30" maxWidth="40" type="1">
+		<rows>
+			<cell value="true"/>
+		</rows>
+	</column>
+	<!-- This cell defines the value of the  poll interval. Default: 60, 0 - Max speed  -->
+	<column name="_Poll" position="2" minWidth="30" prefWidth="35" maxWidth="50" type="0">
+		<rows>
+			<cell value="60"/>
+		</rows>
+	</column>
+	<!-- This cell defines how many events to be sent. Default: 0 - indefinite  -->
+	<column name="_Stop" position="3" minWidth="30" prefWidth="35" maxWidth="50" type="0">
+		<rows>
+			<cell value="5"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Identifier" value of the event -->
+	<column name="Identifier" position="4" minWidth="50" prefWidth="173" maxWidth="700" type="1">
+		<rows>
+			<cell value="From:1000, To:100000000"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Summary" value of the event -->
+	<column name="Summary" position="5" minWidth="50" prefWidth="313" maxWidth="700" type="1">
+		<rows>
+			<cell value="Default event sent from NETCOOL/Event Generator."/>
+		</rows>
+	</column>
+	<!-- This cell contains the "Node" value of the event -->
+	<column name="Node" position="6" minWidth="50" prefWidth="261" maxWidth="700" type="1">
+		<rows>
+			<cell value="Start:100, Step:5, Pref:Lon_, Suff:_en"/>
+		</rows>
+	</column>
+	<!-- This cell contains the "LastOccurrence" value of the event -->
+	<column name="LastOccurrence" position="7" minWidth="50" prefWidth="75" maxWidth="700" type="0">
+		<rows>
+			<cell value="Current time."/>
+		</rows>
+	</column>
+</table>
